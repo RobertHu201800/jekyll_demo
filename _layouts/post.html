@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
-<div class="row" >
+<div id="post">
 {{ content }}
 </div>
-
-<div class="row" >
+<!--
+<div id="comment">
 {% include disqus.html %}
 </div>
 -->
-<div class="row" >
 <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
@@ -17,6 +16,5 @@ layout: default
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/jekyll_demo/{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
 </div>
 
