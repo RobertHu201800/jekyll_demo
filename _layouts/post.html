@@ -5,26 +5,30 @@
 <head>
 
 　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
+   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 　　<title>{{ page.title }}</title>
 
 </head>
 
 <body>
-
+<div class="jumbotron text-left">
 <div id="home">
     <a href="/jekyll_demo">My Blogs</a>&nbsp;&nbsp;
     <a class="extra" href="/jekyll_demo">home</a>
 </div>
-
-
+</div>
+<div class="container">
+<div class="row">
 {{ content }}
-
-
+</div>
+</div>
 <div id="comment">
 {% include disqus.html %}
 </div>
-
+<div class="jumbotron text-left">
 <div id="related">
   <h2>Related Posts</h2>
   <ul class="posts">
@@ -33,7 +37,7 @@
     {% endfor %}
   </ul>
 </div>
-
+</div>
 <a href="https://github.com/RobertHu201800/jekyll_demo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
 
 </body>
